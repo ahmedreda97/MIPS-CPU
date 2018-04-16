@@ -1,0 +1,3 @@
+vhdl isim_temp "REG.vhd"
+vhdl isim_temp "MyPackage.vhd"
+vhdl isim_temp "PC.vhd"

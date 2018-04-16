@@ -1,0 +1,6 @@
+vhdl isim_temp "../../Labs/Lab 4/REG.vhd"
+vhdl isim_temp "MyPackage.vhd"
+vhdl isim_temp "Mux32x1.vhd"
+vhdl isim_temp "Decoder5x32.vhd"
+vhdl isim_temp "RegisterFile.vhd"
+vhdl isim_temp "../../milestone1/RegisterFileTest.vhd"

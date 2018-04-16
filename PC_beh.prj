@@ -1,0 +1,3 @@
+vhdl work "REG.vhd"
+vhdl work "MyPackage.vhd"
+vhdl work "PC.vhd"

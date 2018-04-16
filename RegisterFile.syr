@@ -1,0 +1,586 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: RegisterFile.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RegisterFile.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RegisterFile"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : RegisterFile
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\3rd year sec semester\Architecture\Milestone2\REG.vhd" into library work
+Parsing entity <REG>.
+Parsing architecture <BEHAVOIUR> of entity <reg>.
+Parsing VHDL file "D:\3rd year sec semester\Architecture\Milestone2\MyPackage.vhd" into library work
+Parsing package <MyPackage>.
+Parsing package body <MyPackage>.
+Parsing VHDL file "D:\3rd year sec semester\Architecture\Milestone2\Mux32x1.vhd" into library work
+Parsing entity <Mux32x1>.
+Parsing architecture <Behavioral> of entity <mux32x1>.
+Parsing VHDL file "D:\3rd year sec semester\Architecture\Milestone2\Decoder5x32.vhd" into library work
+Parsing entity <Decoder5x32>.
+Parsing architecture <Behavioral> of entity <decoder5x32>.
+Parsing VHDL file "D:\3rd year sec semester\Architecture\Milestone2\RegisterFile.vhd" into library work
+Parsing entity <RegisterFile>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <RegisterFile> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Decoder5x32> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <REG> (architecture <BEHAVOIUR>) with generics from library <work>.
+
+Elaborating entity <Mux32x1> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "D:\3rd year sec semester\Architecture\Milestone2\RegisterFile.vhd".
+    Summary:
+	no macro.
+Unit <RegisterFile> synthesized.
+
+Synthesizing Unit <Decoder5x32>.
+    Related source file is "D:\3rd year sec semester\Architecture\Milestone2\Decoder5x32.vhd".
+    Found 32x32-bit Read Only RAM for signal <O>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Decoder5x32> synthesized.
+
+Synthesizing Unit <REG>.
+    Related source file is "D:\3rd year sec semester\Architecture\Milestone2\REG.vhd".
+        n = 32
+    Found 32-bit register for signal <TEMP>.
+    Found 32-bit adder for signal <TEMP[31]_GND_8_o_add_0_OUT> created at line 22.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <REG> synthesized.
+
+Synthesizing Unit <Mux32x1>.
+    Related source file is "D:\3rd year sec semester\Architecture\Milestone2\Mux32x1.vhd".
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[31]_MUX_64_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[30]_MUX_96_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[29]_MUX_128_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[28]_MUX_160_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[27]_MUX_192_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[26]_MUX_224_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[25]_MUX_256_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[24]_MUX_288_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[23]_MUX_320_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[22]_MUX_352_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[21]_MUX_384_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[20]_MUX_416_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[19]_MUX_448_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[18]_MUX_480_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[17]_MUX_512_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[16]_MUX_544_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[15]_MUX_576_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[14]_MUX_608_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[13]_MUX_640_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[12]_MUX_672_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[11]_MUX_704_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[10]_MUX_736_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[9]_MUX_768_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[8]_MUX_800_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[7]_MUX_832_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[6]_MUX_864_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[5]_MUX_896_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[4]_MUX_928_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[3]_MUX_960_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[2]_MUX_992_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[1]_MUX_1024_o> created at line 15.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_9_o_I0[0]_MUX_1056_o> created at line 15.
+    Found 1-bit tristate buffer for signal <O<31>> created at line 15
+    Found 1-bit tristate buffer for signal <O<30>> created at line 15
+    Found 1-bit tristate buffer for signal <O<29>> created at line 15
+    Found 1-bit tristate buffer for signal <O<28>> created at line 15
+    Found 1-bit tristate buffer for signal <O<27>> created at line 15
+    Found 1-bit tristate buffer for signal <O<26>> created at line 15
+    Found 1-bit tristate buffer for signal <O<25>> created at line 15
+    Found 1-bit tristate buffer for signal <O<24>> created at line 15
+    Found 1-bit tristate buffer for signal <O<23>> created at line 15
+    Found 1-bit tristate buffer for signal <O<22>> created at line 15
+    Found 1-bit tristate buffer for signal <O<21>> created at line 15
+    Found 1-bit tristate buffer for signal <O<20>> created at line 15
+    Found 1-bit tristate buffer for signal <O<19>> created at line 15
+    Found 1-bit tristate buffer for signal <O<18>> created at line 15
+    Found 1-bit tristate buffer for signal <O<17>> created at line 15
+    Found 1-bit tristate buffer for signal <O<16>> created at line 15
+    Found 1-bit tristate buffer for signal <O<15>> created at line 15
+    Found 1-bit tristate buffer for signal <O<14>> created at line 15
+    Found 1-bit tristate buffer for signal <O<13>> created at line 15
+    Found 1-bit tristate buffer for signal <O<12>> created at line 15
+    Found 1-bit tristate buffer for signal <O<11>> created at line 15
+    Found 1-bit tristate buffer for signal <O<10>> created at line 15
+    Found 1-bit tristate buffer for signal <O<9>> created at line 15
+    Found 1-bit tristate buffer for signal <O<8>> created at line 15
+    Found 1-bit tristate buffer for signal <O<7>> created at line 15
+    Found 1-bit tristate buffer for signal <O<6>> created at line 15
+    Found 1-bit tristate buffer for signal <O<5>> created at line 15
+    Found 1-bit tristate buffer for signal <O<4>> created at line 15
+    Found 1-bit tristate buffer for signal <O<3>> created at line 15
+    Found 1-bit tristate buffer for signal <O<2>> created at line 15
+    Found 1-bit tristate buffer for signal <O<1>> created at line 15
+    Found 1-bit tristate buffer for signal <O<0>> created at line 15
+    Summary:
+	inferred  32 Multiplexer(s).
+	inferred  32 Tristate(s).
+Unit <Mux32x1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 32
+ 32-bit adder                                          : 32
+# Registers                                            : 32
+ 32-bit register                                       : 32
+# Multiplexers                                         : 96
+ 1-bit 32-to-1 multiplexer                             : 64
+ 32-bit 2-to-1 multiplexer                             : 32
+# Tristates                                            : 64
+ 1-bit tristate buffer                                 : 64
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Decoder5x32>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_O> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <I>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <O>             |          |
+    -----------------------------------------------------------------------
+Unit <Decoder5x32> synthesized (advanced).
+
+Synthesizing (advanced) Unit <REG>.
+The following registers are absorbed into counter <TEMP>: 1 register on signal <TEMP>.
+Unit <REG> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x32-bit single-port distributed Read Only RAM       : 1
+# Counters                                             : 32
+ 32-bit up counter                                     : 32
+# Multiplexers                                         : 64
+ 1-bit 32-to-1 multiplexer                             : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RegisterFile> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RegisterFile, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : RegisterFile.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3809
+#      GND                         : 1
+#      LUT3                        : 1024
+#      LUT6                        : 704
+#      MUXCY                       : 992
+#      MUXF7                       : 64
+#      XORCY                       : 1024
+# FlipFlops/Latches                : 1024
+#      FDRE                        : 1024
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 112
+#      IBUF                        : 48
+#      OBUF                        : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1024  out of  126800     0%  
+ Number of Slice LUTs:                 1728  out of  63400     2%  
+    Number used as Logic:              1728  out of  63400     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1728
+   Number with an unused Flip Flop:     704  out of   1728    40%  
+   Number with an unused LUT:             0  out of   1728     0%  
+   Number of fully used LUT-FF pairs:  1024  out of   1728    59%  
+   Number of unique control sets:        32
+
+IO Utilization: 
+ Number of IOs:                         113
+ Number of bonded IOBs:                 113  out of    210    53%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1024  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.184ns (Maximum Frequency: 457.854MHz)
+   Minimum input arrival time before clock: 2.912ns
+   Maximum output required time after clock: 2.236ns
+   Maximum combinational path delay: 2.144ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.184ns (frequency: 457.854MHz)
+  Total number of paths / destination ports: 16896 / 1024
+-------------------------------------------------------------------------
+Delay:               2.184ns (Levels of Logic = 33)
+  Source:            R31/TEMP_0 (FF)
+  Destination:       R31/TEMP_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: R31/TEMP_0 to R31/TEMP_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.361   0.305  R31/TEMP_0 (R31/TEMP_0)
+     LUT3:I2->O            1   0.097   0.000  R31/Mcount_TEMP_lut<0> (R31/Mcount_TEMP_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  R31/Mcount_TEMP_cy<0> (R31/Mcount_TEMP_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<1> (R31/Mcount_TEMP_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<2> (R31/Mcount_TEMP_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<3> (R31/Mcount_TEMP_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<4> (R31/Mcount_TEMP_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<5> (R31/Mcount_TEMP_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<6> (R31/Mcount_TEMP_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<7> (R31/Mcount_TEMP_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<8> (R31/Mcount_TEMP_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<9> (R31/Mcount_TEMP_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<10> (R31/Mcount_TEMP_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<11> (R31/Mcount_TEMP_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<12> (R31/Mcount_TEMP_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<13> (R31/Mcount_TEMP_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<14> (R31/Mcount_TEMP_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<15> (R31/Mcount_TEMP_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<16> (R31/Mcount_TEMP_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<17> (R31/Mcount_TEMP_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<18> (R31/Mcount_TEMP_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<19> (R31/Mcount_TEMP_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<20> (R31/Mcount_TEMP_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<21> (R31/Mcount_TEMP_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<22> (R31/Mcount_TEMP_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<23> (R31/Mcount_TEMP_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<24> (R31/Mcount_TEMP_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<25> (R31/Mcount_TEMP_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<26> (R31/Mcount_TEMP_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<27> (R31/Mcount_TEMP_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<28> (R31/Mcount_TEMP_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  R31/Mcount_TEMP_cy<29> (R31/Mcount_TEMP_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  R31/Mcount_TEMP_cy<30> (R31/Mcount_TEMP_cy<30>)
+     XORCY:CI->O           1   0.370   0.000  R31/Mcount_TEMP_xor<31> (R31/Mcount_TEMP31)
+     FDRE:D                    0.008          R31/TEMP_31
+    ----------------------------------------
+    Total                      2.184ns (1.879ns logic, 0.305ns route)
+                                       (86.0% logic, 14.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 130560 / 2048
+-------------------------------------------------------------------------
+Offset:              2.912ns (Levels of Logic = 35)
+  Source:            write_sel<3> (PAD)
+  Destination:       R31/TEMP_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: write_sel<3> to R31/TEMP_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.805  write_sel_3_IBUF (write_sel_3_IBUF)
+     LUT6:I0->O           64   0.097   0.491  ld81 (R8/_n0021_inv)
+     LUT3:I1->O            1   0.097   0.000  R8/Mcount_TEMP_lut<0> (R8/Mcount_TEMP_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  R8/Mcount_TEMP_cy<0> (R8/Mcount_TEMP_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<1> (R8/Mcount_TEMP_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<2> (R8/Mcount_TEMP_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<3> (R8/Mcount_TEMP_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<4> (R8/Mcount_TEMP_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<5> (R8/Mcount_TEMP_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<6> (R8/Mcount_TEMP_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<7> (R8/Mcount_TEMP_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<8> (R8/Mcount_TEMP_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<9> (R8/Mcount_TEMP_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<10> (R8/Mcount_TEMP_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<11> (R8/Mcount_TEMP_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<12> (R8/Mcount_TEMP_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<13> (R8/Mcount_TEMP_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<14> (R8/Mcount_TEMP_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<15> (R8/Mcount_TEMP_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<16> (R8/Mcount_TEMP_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<17> (R8/Mcount_TEMP_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<18> (R8/Mcount_TEMP_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<19> (R8/Mcount_TEMP_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<20> (R8/Mcount_TEMP_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<21> (R8/Mcount_TEMP_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<22> (R8/Mcount_TEMP_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<23> (R8/Mcount_TEMP_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<24> (R8/Mcount_TEMP_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<25> (R8/Mcount_TEMP_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<26> (R8/Mcount_TEMP_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<27> (R8/Mcount_TEMP_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<28> (R8/Mcount_TEMP_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  R8/Mcount_TEMP_cy<29> (R8/Mcount_TEMP_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  R8/Mcount_TEMP_cy<30> (R8/Mcount_TEMP_cy<30>)
+     XORCY:CI->O           1   0.370   0.000  R8/Mcount_TEMP_xor<31> (R8/Mcount_TEMP31)
+     FDRE:D                    0.008          R8/TEMP_31
+    ----------------------------------------
+    Total                      2.912ns (1.616ns logic, 1.296ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2048 / 64
+-------------------------------------------------------------------------
+Offset:              2.236ns (Levels of Logic = 4)
+  Source:            R26/TEMP_31 (FF)
+  Destination:       data1<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: R26/TEMP_31 to data1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.361   0.566  R26/TEMP_31 (R26/TEMP_31)
+     LUT6:I2->O            1   0.097   0.556  Mux2/Mmux_Z_9_o_I0[31]_MUX_64_o_81 (Mux2/Mmux_Z_9_o_I0[31]_MUX_64_o_81)
+     LUT6:I2->O            1   0.097   0.000  Mux2/Mmux_Z_9_o_I0[31]_MUX_64_o_3 (Mux2/Mmux_Z_9_o_I0[31]_MUX_64_o_3)
+     MUXF7:I1->O           1   0.279   0.279  Mux2/Mmux_Z_9_o_I0[31]_MUX_64_o_2_f7 (data2_31_OBUF)
+     OBUF:I->O                 0.000          data2_31_OBUF (data2<31>)
+    ----------------------------------------
+    Total                      2.236ns (0.834ns logic, 1.402ns route)
+                                       (37.3% logic, 62.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1344 / 64
+-------------------------------------------------------------------------
+Delay:               2.144ns (Levels of Logic = 5)
+  Source:            read_sel1<1> (PAD)
+  Destination:       data1<31> (PAD)
+
+  Data Path: read_sel1<1> to data1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           256   0.001   0.834  read_sel1_1_IBUF (read_sel1_1_IBUF)
+     LUT6:I0->O            1   0.097   0.556  Mux1/Mmux_Z_9_o_I0[0]_MUX_1056_o_81 (Mux1/Mmux_Z_9_o_I0[0]_MUX_1056_o_81)
+     LUT6:I2->O            1   0.097   0.000  Mux1/Mmux_Z_9_o_I0[0]_MUX_1056_o_3 (Mux1/Mmux_Z_9_o_I0[0]_MUX_1056_o_3)
+     MUXF7:I1->O           1   0.279   0.279  Mux1/Mmux_Z_9_o_I0[0]_MUX_1056_o_2_f7 (data1_0_OBUF)
+     OBUF:I->O                 0.000          data1_0_OBUF (data1<0>)
+    ----------------------------------------
+    Total                      2.144ns (0.474ns logic, 1.670ns route)
+                                       (22.1% logic, 77.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.184|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.06 secs
+ 
+--> 
+
+Total memory usage is 501888 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

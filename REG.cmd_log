@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/3rd year sec semester/Architecture/ise/Milestone1/REG.xst" -ofn "D:/3rd year sec semester/Architecture/ise/Milestone1/REG.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "REG.ngc" REG.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o REG_map.ncd REG.ngd REG.pcf 
+par -w -intstyle ise -ol high -mt off REG_map.ncd REG.ncd REG.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml REG.twx REG.ncd -o REG.twr REG.pcf 
+xst -intstyle ise -ifn "D:/3rd year sec semester/Architecture/ise/Milestone1/REG.xst" -ofn "D:/3rd year sec semester/Architecture/ise/Milestone1/REG.syr" 
