@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 51: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 52: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 53: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 54: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 55: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 56: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 57: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 58: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 59: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 60: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 62: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 63: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 64: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 65: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 66: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 67: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 68: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 69: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 70: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 71: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 73: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 74: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 75: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 76: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 77: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 78: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 79: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 80: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 81: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 82: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 84: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 85: Actual for formal port <arg fmt="%s" index="1">mainmuxop</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/MainModule.vhd" Line 79: Actual for formal port <arg fmt="%s" index="1">loadit</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/MainModule.vhd" Line 87: Actual for formal port <arg fmt="%s" index="1">loadit</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/MainModule.vhd" Line 90: Actual for formal port <arg fmt="%s" index="1">data2</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"D:/3rd year sec semester/Architecture/Milestone2/MainModule.vhd" Line 95: Actual for formal port <arg fmt="%s" index="1">i1</arg> is neither a static name nor a globally static expression
+</msg>
+
+</messages>
+

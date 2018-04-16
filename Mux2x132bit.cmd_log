@@ -1,0 +1,1 @@
+vhdtdtfi -prj Milestone1 -o "D:/3rd year sec semester/Architecture/Milestone2/Mux2x132bit.vhi" -module Mux2x132bit -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Mux2x132bit.vhd 

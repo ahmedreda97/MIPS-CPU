@@ -1,0 +1,97 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/3rd year sec semester/Architecture/Milestone2/RobotTest_isim_beh.exe -prj D:/3rd year sec semester/Architecture/Milestone2/RobotTest_beh.prj work.RobotTest 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/MyPackage.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/Mux4x1.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/Mux2x1.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/REG.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/OneBitALU.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/Mux32x1.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/Decoder5x32.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/SignExt16to32.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/RegisterFile.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/PC.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/Mux2x15bit.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/Mux2x132bit.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/MainPackage.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/InstMem.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/Datamem.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/Control.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/ALUControl.vhd" into library work
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" into library work
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 51: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 52: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 53: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 54: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 55: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 56: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 57: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 58: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 59: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 60: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 62: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 63: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 64: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 65: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 66: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 67: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 68: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 69: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 70: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 71: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 73: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 74: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 75: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 76: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 77: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 78: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 79: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 80: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 81: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 82: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 84: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/ALU.vhd" Line 85: Actual for formal port mainmuxop is neither a static name nor a globally static expression
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/MainModule.vhd" into library work
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/MainModule.vhd" Line 79: Actual for formal port loadit is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/MainModule.vhd" Line 87: Actual for formal port loadit is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/MainModule.vhd" Line 90: Actual for formal port data2 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:/3rd year sec semester/Architecture/Milestone2/MainModule.vhd" Line 95: Actual for formal port i1 is neither a static name nor a globally static expression
+Parsing VHDL file "D:/3rd year sec semester/Architecture/Milestone2/RobotTest.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package mainpackage
+Compiling package mypackage
+Compiling package std_logic_arith
+Compiling package std_logic_signed
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package std_logic_unsigned
+Compiling architecture behavoiur of entity REG [\REG(32)\]
+Compiling architecture behavioral of entity PC [\PC(32)\]
+Compiling architecture behavioral of entity INSTRMEMORY [\INSTRMEMORY(64,32,32)\]
+Compiling architecture behavioral of entity Control [control_default]
+Compiling architecture behavioral of entity ALUControl [alucontrol_default]
+Compiling architecture behavioral of entity Mux2x15bit [mux2x15bit_default]
+Compiling architecture behavioral of entity Decoder5x32 [decoder5x32_default]
+Compiling architecture behavioral of entity Mux32x1 [mux32x1_default]
+Compiling architecture behavioral of entity RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity SignExt16to32 [signext16to32_default]
+Compiling architecture behavioral of entity Mux2x132bit [mux2x132bit_default]
+Compiling package numeric_std
+Compiling architecture behavioral of entity Mux2x1 [mux2x1_default]
+Compiling architecture behavioral of entity Mux4x1 [mux4x1_default]
+Compiling architecture behavioral of entity OneBitALU [onebitalu_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity DATAMEMORY [\DATAMEMORY(64,32,32)\]
+Compiling architecture behavioral of entity MainModule [mainmodule_default]
+Compiling architecture behavior of entity robottest
+Time Resolution for simulation is 1ps.
+Waiting for 18 sub-compilation(s) to finish...
+Compiled 45 VHDL Units
+Built simulation executable D:/3rd year sec semester/Architecture/Milestone2/RobotTest_isim_beh.exe
+Fuse Memory Usage: 39780 KB
+Fuse CPU Usage: 1374 ms
